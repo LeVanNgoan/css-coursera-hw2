@@ -1,0 +1,69 @@
+/* --- PHẦN MỚI: Skip to Main Content --- */
+.skip-link {
+    position: absolute;
+    top: -40px; /* Ẩn link khỏi màn hình */
+    left: 0;
+    background: #2c3e50;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0; /* Hiện link khi nhấn Tab */
+}
+
+/* --- PHẦN 1: Điều hướng (Nav) --- */
+/* Comment out existing li styling as requested */
+/* li { display: inline-block; width: 120px; } */
+
+nav {
+    display: inline-block;
+    width: 80%;
+    background-color: #ecf0f1;
+}
+
+/* Descendant selector cho ảnh trong nav */
+nav img {
+    width: 10%;
+}
+
+/* --- PHẦN 2: Grid Layout --- */
+.grid {
+    display: grid;
+    /* Hai cột, mỗi cột ~40% */
+    grid-template-columns: 40% 40%;
+    justify-content: center; /* Căn giữa các cột */
+    row-gap: 20px;           /* Khoảng cách giữa các hàng */
+    align-items: start;      /* Căn chỉnh các phần tử lên đầu */
+    margin-top: 20px;
+}
+
+/* Descendant selector cho ảnh TRONG class grid */
+.grid img {
+    width: 100%;
+}
+
+/* --- PHẦN 3: Flex Layout --- */
+.flex {
+    display: flex;
+    flex-wrap: wrap;         /* Cho phép xuống dòng nếu thiếu chỗ */
+    justify-content: space-around; /* Phân bổ khoảng cách đều nhau */
+    padding: 20px;
+}
+
+/* --- PHẦN BỔ SUNG: Màu sắc & Tương phản (Dành cho WAVE) --- */
+body {
+    font-family: Arial, sans-serif;
+    color: #222; /* Đảm bảo độ tương phản */
+}
+
+h1 { color: #2c3e50; }
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
